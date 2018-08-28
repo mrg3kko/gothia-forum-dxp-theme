@@ -8,6 +8,7 @@
 	<title>${the_title} - ${company_name}</title>
 
 	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 	<@liferay_util["include"] page=top_head_include />
 </head>
@@ -132,6 +133,8 @@
 -->
 
 <@liferay_util["include"] page=body_bottom_include />
+
+<script type="text/javascript" src="${javascript_folder}/custom-admin-controls.js"></script>
 
 <@liferay_util["include"] page=bottom_include />
 
