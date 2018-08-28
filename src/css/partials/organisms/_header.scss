@@ -1,0 +1,73 @@
+.transition-animate {
+	@include transition-property(all);
+	@include transition-duration(300ms);
+}
+
+.has-control-menu {
+	.main-header {
+		// When control maneu is visible
+		margin-top: 64px;
+	}
+}
+
+.main-header {
+
+	background: $header-bg-mobile;
+
+	@include small {
+		background: $header-bg;
+	}
+
+	//$header-bg-mobile
+
+	@include clearfix();
+
+	.header-inner {
+		@include clearfix();
+
+		padding: 0;
+
+		@include small {
+			padding: 1.6em 0;
+		}
+
+		.logotype {
+			padding-left: 1em;
+			padding-top: 0.5em;
+			float: left;
+			width: $logotype-normal-ultrasmall;
+			@include small {
+				padding-left: 0;
+				padding-top: 0;
+				width: $logotype-medium-size;
+			}
+			@include medium {
+				width: $logotype-normal-size;
+			}
+			img {
+				width: 100%;
+
+				&.responsive { display: block; }
+				&.normal { display: none; }
+
+				@include small {
+					&.responsive { display: none; }
+					&.normal { display: block; }
+				}
+
+			}
+		}
+
+		.top-nav-wrap {
+			float: right;
+			width: $topwrap-normal-ultrasmall;
+			@include small {
+				width: $topwrap-small-size;
+			}
+			@include medium {
+				width: $topwrap-normal-size;
+			}
+		}
+	}
+
+}
