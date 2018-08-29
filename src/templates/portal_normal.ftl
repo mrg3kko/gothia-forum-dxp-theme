@@ -10,6 +10,8 @@
 	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+	<script type="text/javascript" src="${javascript_folder}/pojs.js"></script>
+
 	<@liferay_util["include"] page=top_head_include />
 </head>
 
@@ -135,6 +137,11 @@
 <@liferay_util["include"] page=body_bottom_include />
 
 <script type="text/javascript" src="${javascript_folder}/custom-admin-controls.js"></script>
+
+<script type="text/javascript" src="${javascript_folder}/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="${javascript_folder}/jquery/owl.carousel.min.js"></script>
+<script type="text/javascript" src="${javascript_folder}/jq.js"></script>
+
 
 <@liferay_util["include"] page=bottom_include />
 
