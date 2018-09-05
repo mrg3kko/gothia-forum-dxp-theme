@@ -13,3 +13,29 @@
   }
 
 }
+
+.banner-box-wrap {
+
+  .banner-box-extra {
+    background: $got-red url(../images/theme/logo/vgr-logo-red-matte.png) right 20px top 25px no-repeat;
+    color: $got-white;
+    padding: 20px 200px 20px 20px;
+
+    a,
+    a:visited {
+      color: $got-white;
+      text-decoration: none;
+
+      &:hover {
+        color: $got-white;
+        text-decoration: underline;
+      }
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+}
