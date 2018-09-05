@@ -7,26 +7,26 @@
     max-width: 100%;
   }
 
-  .banner-box-js .carousel-menu-pause,
-  .banner-box-js .carousel-menu-play,
-  .banner-box-js .carousel-menu-prev,
-  .banner-box-js .carousel-menu-next {
-    display: none;
-  }
-
-  .banner-box-js .carousel-item {
-    display: none;
-    position: static;
-    width: 100%;
-
-    &.carousel-item-active {
-      display: block;
-    }
-  }
-
-  .banner-box-js .carousel-item img {
-    width: 100%;
-  }
+  // .banner-box-js .carousel-menu-pause,
+  // .banner-box-js .carousel-menu-play,
+  // .banner-box-js .carousel-menu-prev,
+  // .banner-box-js .carousel-menu-next {
+  //   display: none;
+  // }
+  //
+  // .banner-box-js .carousel-item {
+  //   display: none;
+  //   position: static;
+  //   width: 100%;
+  //
+  //   &.carousel-item-active {
+  //     display: block;
+  //   }
+  // }
+  //
+  // .banner-box-js .carousel-item img {
+  //   width: 100%;
+  // }
 
   button.gothia-search-btn {
     border: 0;

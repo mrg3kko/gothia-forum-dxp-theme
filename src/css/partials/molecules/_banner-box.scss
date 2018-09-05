@@ -1,0 +1,15 @@
+.banner-box {
+
+  &.owl-carousel {
+    .owl-controls {
+      @include border-radius(4px);
+      background: black;
+      bottom: 6px;
+      margin: 0;
+      position: absolute;
+      right: 6px;
+
+    }
+  }
+
+}
