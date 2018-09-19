@@ -2,8 +2,6 @@
 ;( function( $, window, document, undefined ) {
   'use strict';
 
-  console.log('jq');
-
   var bannerBox = $('.banner-box');
   var bannerBoxItems = $('.banner-box-item');
 
@@ -23,9 +21,6 @@
   });
 
 })( jQuery, window, document );
-
-
-
 
 //FAQ
 ;( function( $, window, document, undefined ) {
@@ -60,6 +55,46 @@
         answerNode.hide();
       }
     }
+
+  });
+
+})( jQuery, window, document );
+
+// Select filter
+;( function( $, window, document, undefined ) {
+  'use strict';
+
+  $('.js-select-filter').each(function(index, node) {
+
+    var filterCtnId = $(node).data('filterctn');
+    var filterItemSelector = $(node).data('filteritemselector');
+
+    var select = $(node).find('select');
+    var filterCtn = $(node).parent().find('#' + filterCtnId);
+
+    if(select && filterCtn && filterItemSelector) {
+
+      $(select).change(function(e) {
+        var currentSelect = $(e.currentTarget);
+
+        var currentSelectValue = currentSelect.val();
+
+
+        var allFilterItems = filterCtn.find('.' + filterItemSelector);
+        var filteredItems = filterCtn.find('.' + currentSelectValue);
+
+				if(currentSelectValue == "0") {
+					allFilterItems.show();
+				} else {
+					allFilterItems.hide();
+					filteredItems.show();
+				}
+
+      });
+
+      $(node).addClass('select-filter-ready');
+    }
+
 
   });
 
