@@ -1,17 +1,17 @@
 <footer id="footer" class="main-footer container" role="contentinfo">
 
 	<div class="footer-main">
-		<div class="row-fluid">
+		<div class="row">
 
-			<div class="span4">
+			<div class="col-md-4">
 				<@includeWCD group_id footer_col_1_article_id />
 			</div>
 
-			<div class="span4">
+			<div class="col-md-4">
 				<@includeWCD group_id footer_col_2_article_id />
 			</div>
 
-			<div class="span4">
+			<div class="col-md-4">
 				<@includeWCD group_id footer_col_3_article_id />
 			</div>
 
